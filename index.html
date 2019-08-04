@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .left {
+            float: left;
+            border: lime 1px solid;
+        }
+
+        .action {
+            float: left;
+            margin: 5px 10px;
+        }
+
+        .inputcontainer {
+            float: left;
+            margin: 5px
+        }
+
+        .right {
+            float: left;
+            width: 50%;
+        }
+
+        .inputvalue {
+            margin: 5px;
+        }
+
+        .inputvalue>input {
+            width: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .left,
+            .right {
+                width: 100%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="left">
+            <div class="inputcontainer">
+                <div class="inputvalue">
+                    <Lable>A 0</Lable>
+                    <input type="text" value="2,20,1,28">
+                    <input type="text">
+                </div>
+                <div class="inputvalue">
+                    <Lable>B 1</Lable>
+                    <input type="text" value="2,40,1,56">
+                    <input type="text">
+                </div>
+                <div class="inputvalue">
+                    <Lable>C 2</Lable>
+                    <input type="text" value="3,10,2,16">
+                    <input type="text" value="1">
+                </div>
+                <div class="inputvalue">
+                    <Lable>D 3</Lable>
+                    <input type="text" value="1,20,1,20">
+                    <input type="text">
+                </div>
+                <div class="inputvalue">
+                    <Lable>E 4</Lable>
+                    <input type="text" value="5,20,3,34">
+                    <input type="text" value="1">
+                </div>
+                <div class="inputvalue">
+                    <Lable>F 5</Lable>
+                    <input type="text" value="3,30,1,42">
+                    <input type="text" value="0,2">
+                </div>
+            </div> -->
+            <div class="inputcontainer">
+                <div class="inputvalue">
+                    <Lable>A 0</Lable>
+                    <input type="text" value="4,40,2,68">
+                    <input type="text">
+                </div>
+                <div class="inputvalue">
+                    <Lable>B 1</Lable>
+                    <input type="text" value="1,30,1,30">
+                    <input type="text" value="0">
+                </div>
+                <div class="inputvalue">
+                    <Lable>C 2</Lable>
+                    <input type="text" value="2,40,1,64">
+                    <input type="text">
+                </div>
+                <div class="inputvalue">
+                    <Lable>D 3</Lable>
+                    <input type="text" value="3,30,1,60">
+                    <input type="text">
+                </div>
+                <div class="inputvalue">
+                    <Lable>E 4</Lable>
+                    <input type="text" value="5,20,4,40">
+                    <input type="text" value="3">
+                </div>
+                <div class="inputvalue">
+                    <Lable>F 5</Lable>
+                    <input type="text" value="5,40,3,72">
+                    <input type="text" value="1,2">
+                </div>
+            </div>
+            <div class="action">
+                <div>
+                    <button id="btnadd">Add</button>
+                    <button id="btndel">Del</button>
+                    <button id="btnsolution">Solution</button>
+                </div>
+                <div>
+                    <label>TDA</label>
+                    <!-- <input id="tda" value="5"> -->
+                    <input id="tda" value="7">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <table>
+                <thead>
+                    <tr>
+                        <th> Crashed </th>
+                        <th> Cr.Cost </th>
+                        <th> T.End </th>
+                        <th> Next </th>
+                    </tr>
+
+                </thead>
+                <tbody id="tableresult">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="src/js/index.js" type="module"></script>
+</body>
+
+</html>
