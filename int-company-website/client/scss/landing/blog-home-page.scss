@@ -1,0 +1,43 @@
+.blog-home-page {
+  .main-stream {
+    max-width: map-get($grid-breakpoints, 'md');
+    margin: 0px auto;
+
+    .blog-item {
+      border-bottom: 1px solid $gray-200;
+    }
+  }
+
+  @include media-breakpoint-down('lg') {
+    .navbar {
+      background: #01a7f5;
+    }
+    .content-blog {
+      margin-top: 60px;
+    }
+  }
+  header {
+    height: unset;
+    width: unset;
+    background: #01a7f5;
+  }
+  .blog_search {
+    background: white;
+  }
+  .intro-blog {
+    .title {
+      color: #003866;
+      font-weight: bold;
+    }
+    .date-post {
+      color: #003866;
+    }
+  }
+  .title-blog {
+    color: #003866;
+    font-weight: bold;
+  }
+  .date-post-blog {
+    color: #003866;
+  }
+}

@@ -1,0 +1,33 @@
+// .clients {
+//   background-image: url('/static/img/landing/bg-clients.png');
+//   background-repeat: no-repeat;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: 100% 100%;
+//   min-height: 200px;
+//   margin-top: 100px;
+//   margin-bottom: 100px;
+// }
+
+// .card {
+//   border-radius: 9px !important;
+// }
+#clients{
+  margin-bottom: 50px;
+  padding: 0 8%;
+  text-align: center;
+  > h1{
+    color:#003866;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  @include  media-breakpoint-down('md'){
+    margin-top: 30px;
+    h1{
+      font-size: 25px;
+    }
+  }
+
+}

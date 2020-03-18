@@ -1,0 +1,56 @@
+.blog-page {
+  .blog-container {
+    .blog-content {
+      max-width: map-get($grid-breakpoints, 'md');
+      margin: 0 auto;
+    }
+
+    .blog-feature-image {
+      max-width: map-get($grid-breakpoints, 'lg');
+    }
+  }
+  .author-container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  .author-card {
+    border-style: solid;
+    border-top-color: #4b8ec9;
+    border-left-color: $light;
+    border-right-color: $light;
+    border-bottom-color: $light;
+  }
+  .author__body {
+    border-style: solid;
+    border-top-color: $light;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  .author__body--img {
+    width: 125px;
+  }
+  .share-button {
+    cursor: pointer;
+  }
+  .progress-container {
+    background: $light;
+    height: 2px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+  .progress-bar {
+    height: 2px;
+    background: $primary;
+  }
+  .back-to-top {
+    color: $primary;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,23 @@
+.index-page {
+  .service {
+    border: solid 1px $gray-300;
+    height: 100%;
+    .service-icon {
+      float: left;
+      padding-right: 24px;
+    }
+    .service-footer {
+      text-align: center;
+    }
+  }
+
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "watch": [
+    ".env",
+    "server",
+    "common"
+  ],
+  "ignore": [
+    "server/locales"
+  ],
+  "ext": "js json"
+}

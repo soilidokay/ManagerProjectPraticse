@@ -1,0 +1,73 @@
+// Styling for the services section
+// .service-heading {
+//   margin: 15px 0;
+//   text-transform: none;
+// }
+
+.badge-outline {
+  color: #22c4fa;
+  border: 1px solid #22c4fa;
+  background-color: transparent;
+  border-radius: 9px;
+}
+#services{
+  margin-top: 50px;
+  padding : 0 8%;
+  background-image: url('/static/img/services/bg.png')!important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  p.card-text{
+    color: #4F6491;
+    letter-spacing: 0.225px;
+    font-weight: 500;
+  }
+  .card-tools{
+    padding : 0 5%
+  }
+  .section-heading{
+    color:#003866;
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .section-content{
+    color: #4F6491;
+    font-size: 18px;
+    font-weight: 500;
+  }
+ 
+  .bg-overlay{
+    background: linear-gradient(to right bottom,#00aeef,#00c9ff );
+    position: relative;
+    top: 0;
+    height: 120px;
+    border-radius: 8px 8px 0 0;
+    .card-title{
+      width: 100%;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%,5%);
+      font-size: 20px;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+  }
+  img{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-25%);
+  }
+  @include  media-breakpoint-down('md'){
+    margin-top: 0px;
+    .section-heading{
+      font-size: 25px;
+    }
+    .section-content{
+      font-size:14px;
+    }
+  }
+}
+

@@ -1,0 +1,118 @@
+.masterhead{
+  position: relative;
+  top: 0;
+  left: 0;
+    .app-navbar {
+      padding: 20px 8%;
+      .navbar-toggler {
+        border: none;
+      }
+  }
+
+  .intro-text{
+    padding: 9rem 100px;
+    .intro-heading{
+      color:#003866;
+      font-size: 66px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+    .intro-lead-in{
+      width: 50%;
+      margin-bottom: 1.5rem!important;
+      color: #4F6491;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.255px;
+      margin: 0;
+      line-height: 27px;
+    }
+    .btn-intro{
+      background: linear-gradient(to right bottom,#00aeef,#00c9ff );
+      color: #fff;
+      outline: none;
+      padding: 10px 20px;
+      margin-top: 0;
+      border:none;
+      border-radius: 10px;
+      height: 69px;
+    }
+  }
+  .nav-link {
+    font-size: 0.5rem;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .nav-item-contact {
+    color: #00aeef;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 8px;
+  }
+
+  .intro-overlay{
+    position: absolute;
+    bottom: 0%;
+    left: -3%;
+    width: 100px;
+    height: 100px;
+    background-color: #00c3ef85;
+    border-radius: 50%;
+  }
+}
+
+.mobile-sidebar {
+  z-index: 1021;
+  position: fixed;
+  right: 0;
+  background: linear-gradient(
+    188.9deg,
+    #0087eb -30.3%,
+    #00c9ff 50.36%
+  ) !important;
+  height: 100%;
+  line-height: 3;
+  top: 0px;
+  box-shadow: 10px 10px 10px 10px;
+
+  @include media-breakpoint-up('md') {
+    display: none !important;
+    // #app{
+    //   .intro-text{
+    //     margin-top: -20%;
+    //   }
+    // }
+   
+  }
+
+  &.side-animation {
+    width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    
+  }
+
+  &.side-animation-off {
+    width: 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .mobile-sidebar__close-btn-wrapper {
+    // position: relative;
+    padding: 0.5rem 0;
+    // text-align: right;
+    display: flex;
+    justify-content: space-around;
+   
+
+    .mobile-sidebar__close-btn {
+      color: #00aeef;
+
+      i {
+        font-size: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+// Styling for the contact section
+section#contact {
+  position: relative;
+  top: 0;
+  left: 0;
+  .contact-form {
+    background: linear-gradient(188.9deg, #0087eb -30.3%, #00c9ff 50.36%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  // .btn-contact {
+  //   background: linear-gradient(355.83deg, #0087eb -18.03%, #00c9ff 147.49%);
+  //   color: #fff;
+  //   padding: 20px !important;
+  // } 
+  // .contact-bg--line{
+  //   position: absolute;
+  //   bottom: 20%;
+  //   .line1{
+  //     width: 100%;
+  //     z-index: 10;
+  //     margin-bottom: -100px;
+  //     transform: skewX(50deg);
+  //   }
+  //   .line2{
+  //     width: 50%;
+  //     z-index: 2;
+  //     transform: skewY(10deg);
+  //   }
+  // }
+
+  .section-heading {
+    color: $white;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+
+    input,
+    textarea {
+      padding: 12px;
+    }
+
+    input.form-control {
+      height: auto;
+    }
+
+    textarea.form-control {
+      height: 100px;
+    }
+  }
+
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+
+  .btn-contact {
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #fff;
+  }
+
+  ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+
+    @include heading-font;
+  }
+
+  :-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+
+    @include heading-font;
+  }
+
+  ::-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+
+    @include heading-font;
+  }
+
+  :-ms-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+
+    @include heading-font;
+  }
+
+  @include  media-breakpoint-down('md'){
+    padding: 0 4%;
+    .contact-bg--line{
+      display: none;
+    }
+    .section-heading{
+      font-size: 25px;
+    }
+    .section-content{
+      font-size: 16px;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 10px;
+    }
+    .btn-contact{
+      padding: 8px 15px;
+      font-size: 13px!important;
+    }
+  }
+}

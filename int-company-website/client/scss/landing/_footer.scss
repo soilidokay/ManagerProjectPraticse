@@ -1,0 +1,95 @@
+// Styling for the footer
+#footer {
+  margin-top: 50px;
+  @include media-breakpoint-down('lg') {
+    .footer-navigation {
+      background-image: url('/static/img/landing/background-footer-responsive.png') !important;
+      background-repeat: no-repeat;
+    }
+  }
+  .footer-navigation {
+    
+    padding: 0 10%;
+    background-image: url('/static/img/footer.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 15%;
+    color: #fff;
+    .footer-content{
+      display: flex;
+      justify-content: space-between;
+      @include  media-breakpoint-down('md'){
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+      }
+    }
+   
+  }
+
+
+  // ul.quicklinks {
+  //   font-size: 90%;
+  //   line-height: 40px;
+  //   margin-bottom: 0;
+  //   text-transform: none;
+
+  //   @include heading-font;
+  // }
+  .contact-info{
+    height: 40px;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    span.copyright {
+      line-height: 40px;
+      @include  media-breakpoint-down('md'){
+        font-size: 12px;
+      }
+    }
+    .contact-info--list{
+      padding-top: 5px;
+      li{
+        display: inline;
+        a{
+          i{
+            margin: 0 5px;
+            font-size: 30px;
+            &.contact-linkedin{
+              color: #0E76A8;
+            }
+            &.contact-facebook{
+              color: #4F6491;
+            }
+            &.contact-twitter{
+              color:#00c9ff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// ul.social-buttons {
+//   margin-bottom: 0;
+//   li {
+//     a {
+//       display: block;
+//       -webkit-transition: all 0.3s;
+//       -moz-transition: all 0.3s;
+//       transition: all 0.3s;
+//       //color: white;
+//       // border-radius: 100%;
+//       //outline: none;
+//       // background-color: $gray-900;
+
+//       &:active,
+//       &:focus,
+//       &:hover {
+//         background-color: $primary;
+//       }
+//     }
+//   }
+// }

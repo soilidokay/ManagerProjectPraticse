@@ -1,0 +1,206 @@
+// .feedback {
+//   background-image: url('/static/img/landing/bg-slidebar.png');
+//   background-repeat: no-repeat;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: 100% 100%;
+//   height: 796px;
+//   @include media-breakpoint-down('lg') {
+//     height: 300px;
+//     .carousel-indicators {
+//       bottom: unset;
+//       top: 170px;
+//     }
+//     .carousel-indicators2 {
+//       position: absolute;
+//       // left: 100px;
+//       // top: -150px !important;
+//     }
+//     .intro-tech {
+//       padding-top: unset !important;
+//       color: transparent;
+//     }
+//     .carousel-item {
+//       font-size: 15px !important;
+//     }
+//     .text-carousel--fix {
+//       margin-top: 75px;
+//       display: block;
+//       display: -webkit-box;
+//       max-width: 100%;
+//       height: 43px;
+//       // margin: 0 auto;
+//       font-size: 14px;
+//       line-height: 1;
+//       -webkit-line-clamp: 3;
+//       -webkit-box-orient: vertical;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//     }
+//     #carouselExampleIndicators {
+//       right: -50px;
+//     }
+//   }
+//   .intro-tech {
+//     padding-top: 170px;
+//     color: transparent;
+//   }
+
+//   img {
+//     transition: 0.3s;
+//   }
+
+//   img.active {
+//     // width: 150px;
+//     // height: 150px;
+//     transform: scale(1);
+//   }
+
+//   div.carousel-indicators {
+//     top: 5%;
+//   }
+
+//   .carousel-indicators2 {
+//     position: absolute;
+//     top: 10px;
+//   }
+
+//   .carousel-indicators2 img {
+//     width: 15%;
+//     height: 15%;
+//     padding: 0 10px;
+//   }
+//   .carousel-indicators2 .active {
+//     width: 25%;
+//     height: 25%;
+//   }
+
+//   .carousel-inner {
+//     margin-top: 10%;
+//   }
+
+//   .carousel-item {
+//     font-size: 20px;
+//   }
+// }
+
+#testimonials{
+   position: relative;
+   top: 0;
+   left: 0;
+    margin-bottom: 30px;
+    padding-bottom: 60px;
+
+    .testimonials-line{
+        position: absolute;
+        width: 70px;
+        bottom: 10%;
+    }
+    .testimonials-snow,.testimonials-ellipse{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    .testimonials-ellipse{
+        top: 0;
+    }
+    .testimonials-ellipse--icon{
+        top: 15%;
+    }
+    .carousel-control-prev .carousel-control-prev-icon,
+    .carousel-control-next .carousel-control-next-icon{
+        background-image: none!important;
+        font-size: 25px;
+        color: grey;
+    }
+    ol.carousel-indicators{
+            position: absolute;
+            bottom: -60px;
+            li{
+                background: grey;
+                padding: 0;
+                border-top: 0;
+                border-bottom: 0;
+            }
+            li.active{
+                background: #00aeef;
+            }
+        }
+    
+    h1{
+        color: #003866;
+        letter-spacing: 1px;
+        font-size: 50px;
+    }
+    .testimonials-content{
+        margin-left: 150px;
+        box-sizing: content-box;
+        h2{
+            color: #003866;
+        }
+        .testimonials-icon{
+            font-size: 30px;
+            color:#00aeef;
+        }
+        .testimonials-text{
+            padding-left: 50px;
+            color: #4F6491;
+            letter-spacing: 0.225px;
+            font-weight: 500;
+            line-height: 1.55rem;
+        }
+        .testimonials-client{
+            margin-left: 50px;
+            display:flex;
+            justify-content: start;
+            img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            .testimonials-info{
+                h5{
+                    color: #003866;
+                }
+                p{
+                    color: grey;
+                }
+            }
+        }
+    }
+
+    @include  media-breakpoint-down('md'){
+        margin-top: -100px;
+        .testimonials-line,.testimonials-snow,.testimonials-ellipse{
+            display: none;
+        }
+        h1{
+            font-size: 25px;
+        }
+        .testimonials-content{
+            margin-left: 10px;
+            .testimonials-client{
+                display:block;
+                text-align: center;
+                margin-left: 0;
+            }
+        }
+        h2{
+            font-size: 20px;
+        }
+        .carousel-control-prev .carousel-control-prev-icon,
+        .carousel-control-next .carousel-control-next-icon{
+            display: none;
+        }
+        .testimonials-text{
+            margin-left: -50px;
+            font-size: 14px;
+        }
+        
+        .testimonials-logo--clients{
+           display: none!important;
+        }
+    }
+}
